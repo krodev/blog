@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1>Probando...{{titulo}}</h1>
+
+	{% for obj in object_list %}
+	
+	<a href="{{ obj.get_absolute_url }}">{{obj.titulo}}</a><br/>
+	{{obj.contenido}}<br/>
+	{{obj.timestamp}}<br/>
+	{{obj.actualizado}}<br/>
+	<br/>
+
+	{% endfor %}
+
+</body>
+</html>

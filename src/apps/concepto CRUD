@@ -1,0 +1,7 @@
+C reate (crear) --añadir/guardar en la base de datos // en http es --POST
+R ead/retrieve (recuperar) --de la base de datos **Quering** // --GET
+U pdate (actualizar) -- en http es // --put/path
+D elete (borrar/eliminar) -- de la base de datos //--DELETE
+
+List (listar) --hacer una lista de todos lod datos de la BD (queryset)
+Search (buscar) --hacer una búsqueda (parecido a 'retrieve')

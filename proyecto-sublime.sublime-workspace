@@ -1,0 +1,387 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"res",
+				"request"
+			],
+			[
+				"requ",
+				"request"
+			],
+			[
+				"border-",
+				"border-collapse"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"vi",
+				"views"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"MEDIA",
+				"MEDIA_ROOT"
+			],
+			[
+				"med",
+				"media_root"
+			],
+			[
+				"SATI",
+				"STATIC_ROOT"
+			],
+			[
+				"STA",
+				"STATIC_ROOT"
+			],
+			[
+				"url",
+				"urlpatterns"
+			],
+			[
+				"STAT",
+				"STATICFILES_DIRS"
+			],
+			[
+				"me",
+				"mensaje_email"
+			],
+			[
+				"EM",
+				"EMAIL_HOST_USER"
+			],
+			[
+				"EMAI",
+				"EMAIL_HOST_PASSWORD"
+			],
+			[
+				"EMAIL",
+				"EMAIL_HOST_USER"
+			],
+			[
+				"cle",
+				"cleaned_data"
+			],
+			[
+				"cl",
+				"cleaned_data"
+			],
+			[
+				"P",
+				"POST"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"Post",
+				"PostForm"
+			],
+			[
+				"name",
+				"namespace"
+			],
+			[
+				"in",
+				"include"
+			],
+			[
+				"vac",
+				"Vacuna"
+			],
+			[
+				"ma",
+				"max_length"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/apps/posts/models.py",
+			"settings":
+			{
+				"buffer_size": 380,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/apps/posts/admin.py",
+			"settings":
+			{
+				"buffer_size": 112,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 200.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 440.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/T/blogPD110/src",
+		"/T/blogPD110/src/apps",
+		"/T/blogPD110/src/apps/posts"
+	],
+	"file_history":
+	[
+		"/C/Users/krocle/AppData/Roaming/Sublime Text 3/Packages/Djaneiro/Settings/Python (Django).sublime-settings",
+		"/T/VirtualEnv/src/pd110/settings.py",
+		"/T/VirtualEnv/src/static_pro/static/css/bootstrap.min.css",
+		"/T/VirtualEnv/src/templates/registration/password_reset_complete.html",
+		"/T/VirtualEnv/src/static_pro/static/css/navbar-static-top.css",
+		"/T/VirtualEnv/src/apps/boletin/admin.py",
+		"/T/VirtualEnv/src/templates/base.html",
+		"/T/VirtualEnv/src/templates/head_css.html",
+		"/T/VirtualEnv/src/templates/inicio.html",
+		"/T/VirtualEnv/src/apps/boletin/views.py",
+		"/T/VirtualEnv/src/templates/about.html",
+		"/T/VirtualEnv/src/templates/navbar.html",
+		"/D/claudio/Desktop/Probar-Django-1.10-master/src/static_pro/static/css/navbar-static-top.css",
+		"/T/VirtualEnv/src/templates/forms.html",
+		"/T/VirtualEnv/src/templates/registration/activation_email.txt",
+		"/T/VirtualEnv/src/templates/registration/registration_form.html",
+		"/T/VirtualEnv/src/pd110/urls.py",
+		"/T/VirtualEnv/src/apps/boletin/forms.py",
+		"/T/VirtualEnv/src/apps/boletin/models.py",
+		"/T/VirtualEnv/src/pd110/views.py",
+		"/T/VirtualEnv/src/static_pro/static/css/custom.css",
+		"/D/claudio/Desktop/Probar-Django-1.10-master/src/pd110/views.py",
+		"/D/claudio/Desktop/Probar-Django-1.10-master/src/pd110/urls.py",
+		"/D/claudio/Desktop/Probar-Django-1.10-master/src/pd110/settings.py",
+		"/T/VirtualEnv/src/templates/javascript.html",
+		"/T/pd110/pd110/urls.py",
+		"/T/pd110/templates/forms.html",
+		"/T/pd110/apps/boletin/admin.py",
+		"/T/pd110/pd110/settings.py"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 109.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			">\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/apps/posts/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 380,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								380,
+								380
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/apps/posts/admin.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 112,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								111,
+								111
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "proyecto-sublime.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 425.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
