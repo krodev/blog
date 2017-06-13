@@ -7,7 +7,16 @@ from .models import Post
 # Create your views here.
 
 def post_create(request):
-	form = PostForm()
+	form = PostForm(request.POST or None)
+	# if request.method == "POST":
+	# 	print request.POST.get("titulo")
+	# 	print request.POST.get("contenido")
+	if form.is_valid():
+		instance = form.save(commit=False)
+		#commit=False para no guardar de una el form, si es que se quieren hacer algunos cambios antes de guardar en la BD
+
+		print form.cleaned_data.get("titulo")
+		instance.save()
 	context = {
 		"form":form,
 	}
