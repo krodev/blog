@@ -6,3 +6,5 @@ pip-selfcheck.json
 share/
 *.pyc
 __pycache__
+proyecto-sublime.sublime-project
+proyecto-sublime.sublime-workspace
