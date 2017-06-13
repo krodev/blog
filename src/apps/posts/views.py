@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from .models import Post
@@ -14,9 +14,10 @@ def post_create(request):
 	if form.is_valid():
 		instance = form.save(commit=False)
 		#commit=False para no guardar de una el form, si es que se quieren hacer algunos cambios antes de guardar en la BD
-
 		print form.cleaned_data.get("titulo")
 		instance.save()
+		#mensaje
+		return HttpResponseRedirect(instance.get_absolute_url())
 	context = {
 		"form":form,
 	}
@@ -40,9 +41,20 @@ def post_list(request):
 	}
 	return render (request, "index.html",context)
 
-def post_update(request):
-
-	return HttpResponse("<h1>Actualizar!</h1>")
+def post_update(request, id=None):
+	instance = get_object_or_404(Post, id=id)
+	form = PostForm(request.POST or None, instance=instance)
+	if form.is_valid():
+		instance = form.save(commit=False)
+		instance.save()
+		#mensaje...
+		return HttpResponseRedirect(instance.get_absolute_url())
+	context = {
+		"titulo":instance.titulo,
+		"instance":instance,
+		"form":form,
+	}
+	return render (request, "post_form.html",context)
 
 def post_delete(request):
 	#Este es un tipo de Function views
