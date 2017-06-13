@@ -3,9 +3,17 @@ from django.core.urlresolvers import reverse
 from django.db import models
 
 # Create your models here.
+def upload_location(instance,filename):
+	return "%s/%s"%(instance.id,filename)
+
 class Post(models.Model):
 	titulo = models.CharField(max_length=150)
-	imagen = models.FileField(null=True, blank=True)
+	imagen = models.ImageField(upload_to=upload_location,
+		null=True, blank=True, 
+		height_field='height_field', 
+		width_field='width_field')
+	height_field = models.IntegerField(default=0)
+	width_field=models.IntegerField(default=0)
 	contenido = models.TextField()
 	timestamp= models.DateTimeField(auto_now_add=True, auto_now=False)
 	actualizado=models.DateTimeField(auto_now_add=False, auto_now=True)

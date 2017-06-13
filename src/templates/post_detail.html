@@ -10,7 +10,7 @@
 {% block content %}
 
 <div class='col-sm-6 col-sm-offset-3'>
-	{% if obj.imagen %}
+	{% if instance.imagen %}
 	<img src="{{ instance.imagen.url }}" class='img-responsive'/>
 	{% endif %}
 	<h1>{{titulo}}<small>{{instance.timestamp}}<br/></small></h1>
