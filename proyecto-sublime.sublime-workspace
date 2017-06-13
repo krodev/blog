@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"Htt",
+				"HttpResponseRedirect"
+			],
+			[
+				"PO",
+				"POST"
+			],
+			[
+				"hr",
+				"href\tAttr"
+			],
+			[
+				"get",
+				"get_object_or_404"
+			],
+			[
+				"post",
+				"Post"
+			],
+			[
+				"Pos",
+				"PostModelAdmin"
+			],
+			[
 				"res",
 				"request"
 			],
@@ -107,24 +131,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/apps/posts/models.py",
-			"settings":
-			{
-				"buffer_size": 380,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/apps/posts/admin.py",
-			"settings":
-			{
-				"buffer_size": 112,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -168,14 +174,23 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/T/blogPD110/src",
-		"/T/blogPD110/src/apps",
-		"/T/blogPD110/src/apps/posts"
-	],
 	"file_history":
 	[
+		"/T/blogPD110/src/apps/posts/models.py",
+		"/T/blogPD110/src/apps/posts/views.py",
+		"/T/blogPD110/src/miblog/urls.py",
+		"/T/blogPD110/src/miblog/settings.py",
+		"/T/blogPD110/src/templates/post_list.html",
+		"/T/blogPD110/src/templates/post_detail.html",
+		"/T/blogPD110/src/templates/post_form.html",
+		"/T/blogPD110/src/templates/messages_display.html",
+		"/T/blogPD110/src/templates/base.html",
+		"/T/blogPD110/src/templates/index.html",
+		"/T/blogPD110/src/apps/posts/admin.py",
+		"/T/blogPD110/src/apps/posts/forms.py",
+		"/T/blogPD110/src/apps/posts/urls.py",
+		"/T/blogPD110/src/templates/posts/post_detail.html",
+		"/T/blogPD110/src/apps/concepto CRUD",
 		"/C/Users/krocle/AppData/Roaming/Sublime Text 3/Packages/Djaneiro/Settings/Python (Django).sublime-settings",
 		"/T/VirtualEnv/src/pd110/settings.py",
 		"/T/VirtualEnv/src/static_pro/static/css/bootstrap.min.css",
@@ -208,7 +223,7 @@
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -222,6 +237,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"index",
+			"obj",
 			">\n"
 		],
 		"highlight": true,
@@ -240,71 +257,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/apps/posts/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 380,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								380,
-								380
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/apps/posts/admin.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 112,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								111,
-								111
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -341,7 +301,7 @@
 	"project": "proyecto-sublime.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":

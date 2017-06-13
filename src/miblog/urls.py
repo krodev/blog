@@ -13,13 +13,20 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import include,url
 from django.contrib import admin
+from django.conf import settings
+from django.conf.urls import include,url
+from django.conf.urls.static import static
 from apps.posts import views
+
 #si hay muchas apps que importar, conviene importar como
 #from apps.posts.view import nombreDelaFuncion
 #esto para no tener problemas a la hora de usar o configurar las urls
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^posts/', include("apps.posts.urls",namespace='posts')),
 ]
+
+if settings.DEBUG:
+	urlpatterns +=static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
