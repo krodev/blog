@@ -13,7 +13,9 @@
 	{% if instance.imagen %}
 	<img src="{{ instance.imagen.url }}" class='img-responsive'/>
 	{% endif %}
-	<h1>{{titulo}}<small>{{instance.timestamp}}<br/></small></h1>
+	<h1>{{titulo}}<small>{{instance.timestamp}}<br/></small></h1><br/>
+	<a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolue_uri }}"><i class="fa fa-facebook-square fa-3x" aria-hidden="true" ></i></a>
+	<a href="https://twitter.com/home?status=Voy%20a%20aprender%20a%20escribir%20código...%20Anímate%20tú%20también%20a%20crear%20aplicaciones%20web%20conmigo!%20{{ request.build_absolue_uri }}"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
 	{{instance.contenido}}<br/>
 
 </div>
