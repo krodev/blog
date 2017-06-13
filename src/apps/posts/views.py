@@ -5,18 +5,12 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .forms import PostForm
 from .models import Post
 
-#from .models import Post
 # Create your views here.
 
 def post_create(request):
-	form = PostForm(request.POST or None)
-	# if request.method == "POST":
-	# 	print request.POST.get("titulo")
-	# 	print request.POST.get("contenido")
+	form = PostForm(request.POST or None,request.FILES or None)
 	if form.is_valid():
 		instance = form.save(commit=False)
-		#commit=False para no guardar de una el form, si es que se quieren hacer algunos cambios antes de guardar en la BD
-		print form.cleaned_data.get("titulo")
 		instance.save()
 		messages.success(request, "El post ha sido creado correctamente")
 		return HttpResponseRedirect(instance.get_absolute_url())
@@ -26,8 +20,6 @@ def post_create(request):
 	return render (request, "post_form.html",context)
 
 def post_detail(request,id=None):
-	#hay que definir los parametros que va a recibir, en este caso id=none, none porque toavia no savemos que parametro
-	#instance = Post.objects.get(id=1)
 	instance = get_object_or_404(Post, id=id)
 	context = {
 		"titulo":instance.titulo,
@@ -45,7 +37,7 @@ def post_list(request):
 		queryset = paginator.page(page)
 	except PageNotAnInteger:
 		# If page is not an integer, deliver first page.
-		queryset = paginator.page(10)
+		queryset = paginator.page(1)
 	except EmptyPage:
 		# If page is out of range (e.g. 9999), deliver last page of results.
 		queryset = paginator.page(paginator.num_pages)
@@ -59,7 +51,7 @@ def post_list(request):
 
 def post_update(request, id=None):
 	instance = get_object_or_404(Post, id=id)
-	form = PostForm(request.POST or None, instance=instance)
+	form = PostForm(request.POST or None, request.FILES or None, instance=instance)
 	if form.is_valid():
 		instance = form.save(commit=False)
 		instance.save()
