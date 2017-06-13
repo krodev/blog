@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
@@ -16,7 +17,7 @@ def post_create(request):
 		#commit=False para no guardar de una el form, si es que se quieren hacer algunos cambios antes de guardar en la BD
 		print form.cleaned_data.get("titulo")
 		instance.save()
-		#mensaje
+		messages.success(request, "El post ha sido creado correctamente")
 		return HttpResponseRedirect(instance.get_absolute_url())
 	context = {
 		"form":form,
@@ -47,7 +48,7 @@ def post_update(request, id=None):
 	if form.is_valid():
 		instance = form.save(commit=False)
 		instance.save()
-		#mensaje...
+		messages.success(request, "El post ha sido modificado correctamente")
 		return HttpResponseRedirect(instance.get_absolute_url())
 	context = {
 		"titulo":instance.titulo,
