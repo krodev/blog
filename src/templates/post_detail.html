@@ -9,12 +9,11 @@
 
 {% block content %}
 
-
-	<h1>{{titulo}}</h1>
-	{{instance.titulo}}<br/>
+<div class='col-sm-6 col-sm-offset-3'>
+	
+	<h1>{{titulo}}<small>{{instance.timestamp}}<br/></small></h1>
 	{{instance.contenido}}<br/>
-	{{instance.timestamp}}<br/>
-	{{instance.actualizado}}<br/>
-	<br/>
+
+</div>
 
 {% endblock %}
