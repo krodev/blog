@@ -1,7 +1,9 @@
 # Proyecto blog con Python-Django
+
 ####################
 requerimientos
 ####################
+
 Django==1.10
 
 olefile==0.44 --- Este tambien se instalo solo (revisar de donde aparecio o cuando)
