@@ -5,6 +5,12 @@
 
 <h1>{{titulo}}</h1>
 
+<form method="GET" action=''>
+	<input type='text' name='q' placeholder="buscar posts" value="{{ request.GET.q }}" />
+	<input type="submit" class="btn btn-primary" value="buscar"/>	
+	<hr/>
+</form>
+
 
 {% for obj in object_list %}
 <div class="row">
@@ -14,7 +20,15 @@
 <img src="{{ obj.imagen.url }}" class='img-responsive'/>
 {% endif %}
 <div class="caption">
-<h3><a href="{{ obj.get_absolute_url }}">{{obj.titulo}}</a><small> hace {{obj.timestamp|timesince}}</small></h3>
+	{% if obj.draf %}<h3>DRAFT</h3>{% endif %}
+	{%if obj.publish > hoy %}<h3>FUTURE POST</h3>{% endif %}
+<h3><a href="{{ obj.get_absolute_url }}">{{obj.titulo}}</a><small> hace {{obj.publish}}</small></h3>
+{% if obj.user.get_full_name %}
+	<p>Autor: {{obj.user.get_full_name}}</p>
+	{% else %}
+	<p>Autor: {{obj.user}}</p
+{% endif %}
+
 <p>{{obj.contenido|linebreaks|truncatechars:123}}</p>
 <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">Ver</a></p>
 </div>
@@ -27,7 +41,7 @@
 <div class="pagination">
 	<span class="step-links">
 		{% if object_list.has_previous %}
-			<a href="?{{ page_request_var }}={{ object_list.previous_page_number }}">anterior</a>
+			<a href="?{{ page_request_var }}={{ object_list.previous_page_number }}{% if request.GET.q %}&q={{request.GET.q}}{% endif %}">anterior</a>
 		{% endif %}
 
 		<span class="current">
@@ -35,7 +49,7 @@
 		</span>
 
 		{% if object_list.has_next %}
-			<a href="?{{ page_request_var }}={{ object_list.next_page_number }}">siguiente</a>
+			<a href="?{{ page_request_var }}={{ object_list.next_page_number }}{% if request.GET.q %}&q={{request.GET.q}}{% endif %}">siguiente</a>
 		{% endif %}
 	</span>
 </div>

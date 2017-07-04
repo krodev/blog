@@ -8,4 +8,6 @@ class PostForm(forms.ModelForm):
 			"titulo",
 			"contenido",
 			"imagen",
+			"draf",
+			"publish",
 		]
